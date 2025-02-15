@@ -37,9 +37,11 @@ export default function Hero() {
           <p className="text-5xl font-medium mt-6 mb-6">
             <span ref={typedRef} className="font-semibold"></span>with AI
           </p>
-          <p className="text-lg font-light mb-6">
-            Explore AI services for your business problems
-          </p>
+          <div className="flex flex-row items-center justify-center"> 
+            <p className="text-xl font-light mb-6">
+              Explore AI services for your business problems
+            </p>
+          </div>
         </div>
       </section>
     );
