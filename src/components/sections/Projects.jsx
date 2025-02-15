@@ -29,7 +29,7 @@ export default function Projects() {
   ];
 
   return (
-    <section className="h-auto bg-[#121212] p-20" id="projects">
+    <section className="h-auto bg-[#121212] p-4 md:p-20" id="projects">
       <p className="text-4xl font-medium text-[#ededed] text-center mb-4">
         Past Projects
       </p>
@@ -38,7 +38,7 @@ export default function Projects() {
       </p>
       
       <div className="flex flex-row justify-center items-center">
-        <div className="grid md:grid-cols-2 sm:grid-cols-1 w-full px-16 gap-16">
+        <div className="grid md:grid-cols-2 grid-cols-1 w-full px-4 md:px-16 gap-8 md:gap-16">
           {projects.map((project, index) => (
             <ProjectCard
               key={index}
