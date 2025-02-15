@@ -15,7 +15,7 @@ function ContactForm() {
     }
     
     return (
-        <section id="contact" className="bg-[#151515] p-20">
+        <section id="contact" className="bg-[#151515] p-8 md:p-20">
             <div className="px-4 mx-auto max-w-screen-md">
                 <p className="text-4xl font-medium text-[#ededed] text-center  mb-4">
                     Contact Us

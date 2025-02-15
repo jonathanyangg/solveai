@@ -27,8 +27,11 @@ export default function Hero() {
     return (
       <section id="home" className="relative h-screen w-full flex items-center justify-center text-[#ededed]">
         <div 
-          className="absolute inset-0 bg-cover bg-center brightness-50 bg-fixed" 
-          style={{backgroundImage: "url('/homepage.jpg')"}}
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat brightness-50 md:bg-fixed" 
+          style={{
+            backgroundImage: "url('/homepage.jpg')",
+            backgroundPosition: "center center"
+          }}
         ></div>
         <div className="flex flex-col items-center relative z-0">
           <p className="text-5xl font-medium mt-6 mb-6">

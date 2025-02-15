@@ -1,6 +1,6 @@
 export default function ProjectCard({ title, description, technologies, websiteUrl, githubUrl }) {
     return (
-      <div className="bg-[#1a1a1a] h-96 w-auto rounded-xl p-8 text-[#ededed] hover:scale-105 transition-all duration-300 flex flex-col">
+      <div className="bg-[#1a1a1a] min-h-[384px] w-auto rounded-xl p-4 md:p- text-[#ededed] hover:scale-105 transition-all duration-300 flex flex-col">
         <div className="flex justify-start items-center mb-4 space-x-4">
           <h3 className="text-2xl font-semibold">{title}</h3>
           {websiteUrl && (
