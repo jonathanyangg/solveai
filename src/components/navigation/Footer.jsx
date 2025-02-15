@@ -2,9 +2,7 @@ export default function Footer() {
     const currentYear = new Date().getFullYear();
     
     const footerLinks = [
-      { name: 'About', href: '#' },
-      { name: 'Privacy Policy', href: '#' },
-      { name: 'Licensing', href: '#' },
+      { name: 'About Me', href: 'https://www.linkedin.com/in/jonathan-yang-7b9075288/' },
       { name: 'Contact', href: '#contact' }
     ];
   
