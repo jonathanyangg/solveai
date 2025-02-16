@@ -1,31 +1,31 @@
 export default function Footer() {
-    const currentYear = new Date().getFullYear();
-    
-    const footerLinks = [
-      { name: 'About Me', href: 'https://www.linkedin.com/in/jonathan-yang-7b9075288/' },
-      { name: 'Contact', href: '#contact' }
-    ];
-  
-    return (
-      <footer className="bg-[#242424]">
-        <div className="w-full mx-auto max-w-screen-xl p-5 flex items-center justify-between">
-          <span className="text-sm text-[#ededed] sm:text-center">
-            © solve-AI - {currentYear}. All Rights Reserved
-          </span>
-          
-          <ul className="flex flex-wrap items-center text-sm space-x-6 font-medium text-[#ededed]">
-            {footerLinks.map((link, index) => (
-              <li key={index}>
-                <a 
-                  href={link.href} 
-                  className="hover:underline me-4 last:me-0"
-                >
-                  {link.name}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </footer>
-    );
-  }
+  const currentYear = new Date().getFullYear()
+
+  const footerLinks = [
+    {
+      name: 'About Me',
+      href: 'https://www.linkedin.com/in/jonathan-yang-7b9075288/'
+    },
+    { name: 'Contact', href: '#contact' }
+  ]
+
+  return (
+    <footer className='bg-[#242424]'>
+      <div className='mx-auto flex w-full max-w-screen-xl flex-row flex-wrap-reverse content-evenly items-center justify-around gap-y-4 p-5'>
+        <span className='text-center text-sm text-[#ededed]'>
+          © solve-AI - {currentYear}. All Rights Reserved
+        </span>
+
+        <ul className='flex flex-wrap items-center gap-x-2 text-sm font-medium text-[#ededed] md:gap-x-6'>
+          {footerLinks.map((link, index) => (
+            <li key={index}>
+              <a href={link.href} className='me-4 last:me-0 hover:underline'>
+                {link.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </footer>
+  )
+}
