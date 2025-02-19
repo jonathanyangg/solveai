@@ -11,7 +11,7 @@ export const metadata = {
   title: "solve-AI",
   description: "AI solutions for your business problems",
   icons: {
-    icon: '/favicon.ico',
+    icon: '/logo.ico',
   }
 
 };
