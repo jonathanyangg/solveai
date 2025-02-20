@@ -6,7 +6,8 @@ export default function Footer() {
       name: 'About Me',
       href: 'https://www.linkedin.com/in/jonathan-yang-7b9075288/'
     },
-    { name: 'Contact', href: '#contact' }
+    { name: 'Contact', 
+      href: 'https://www.linkedin.com/company/solve-aiorg/' }
   ]
 
   return (
