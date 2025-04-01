@@ -26,7 +26,7 @@ export default function Hero() {
 
   return (
     <section
-      id='home'
+      data-section='home'
       className='relative flex h-screen w-full items-center justify-center text-[#ededed]'
     >
       <div

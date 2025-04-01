@@ -23,6 +23,13 @@ export default function Navbar() {
     }
   }, [])
 
+  const scrollToSection = (sectionName) => {
+    const section = document.querySelector(`[data-section="${sectionName}"]`)
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
   return (
     <nav
       id='navbar'
@@ -32,36 +39,36 @@ export default function Navbar() {
     >
       <ul className='my-4 flex flex-row items-center justify-center gap-x-2 md:gap-x-6'>
         <li>
-          <a
-            href='#home'
+          <button
+            onClick={() => scrollToSection('home')}
             className="relative text-lg text-[#ededed] transition-all duration-300 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-[#ededed] after:transition-all after:duration-300 after:content-[''] hover:after:w-full"
           >
             Home
-          </a>
+          </button>
         </li>
         <li>
-          <a
-            href='#solutions'
+          <button
+            onClick={() => scrollToSection('solutions')}
             className="relative text-lg text-[#ededed] transition-all duration-300 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-[#ededed] after:transition-all after:duration-300 after:content-[''] hover:after:w-full"
           >
             Solutions
-          </a>
+          </button>
         </li>
         <li>
-          <a
-            href='#projects'
+          <button
+            onClick={() => scrollToSection('projects')}
             className="relative text-lg text-[#ededed] transition-all duration-300 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-[#ededed] after:transition-all after:duration-300 after:content-[''] hover:after:w-full"
           >
             Projects
-          </a>
+          </button>
         </li>
         <li>
-          <a
-            href='#contact'
+          <button
+            onClick={() => scrollToSection('contact')}
             className="relative text-lg text-[#ededed] transition-all duration-300 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-[#ededed] after:transition-all after:duration-300 after:content-[''] hover:after:w-full"
           >
             Contact
-          </a>
+          </button>
         </li>
       </ul>
     </nav>

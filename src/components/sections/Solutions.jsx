@@ -2,7 +2,7 @@ import SolutionCard from '../cards/SolutionCard'
 
 export default function Solutions() {
   return (
-    <section className='h-auto bg-[#0f0f0f] p-20' id='solutions'>
+    <section className='h-auto bg-[#0f0f0f] p-20' data-section='solutions'>
       <p className='mb-4 text-center text-4xl font-medium text-[#ededed]'>
         Solutions
       </p>
