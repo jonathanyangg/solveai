@@ -7,16 +7,14 @@ export default function Projects() {
       description:
         "An AI-powered system that intelligently matches prospective students with current student guides based on shared interests and backgrounds. Using OpenAI's embedding technology, the system processes student profiles and generates personalized matches, completing what used to be days of manual work in just minutes.",
       technologies: ['Flask', 'Redis', 'Render'],
-      websiteUrl: 'https://matching-ndwd.onrender.com/',
-      githubUrl: 'https://github.com/jonathanyangg/matching'
+      websiteUrl: 'https://matching-ndwd.onrender.com/'
     },
     {
       title: 'AI Powered Course Catalog',
       description:
         'A semantic search tool that transforms an 84-page course catalog into an intuitive AI-powered search system. Students can express their interests in natural language and receive personalized course recommendations, making course selection more accessible and efficient.',
       technologies: ['Django', 'PostgreSQL', 'Azure'],
-      websiteUrl: 'https://lawrencevillecatalog.org',
-      githubUrl: 'https://github.com/jonathanyangg/catalog-deployment'
+      websiteUrl: 'https://lawrencevillecatalog.org'
     },
     {
       title: 'Math Class Placement Model',
@@ -50,7 +48,6 @@ export default function Projects() {
               description={project.description}
               technologies={project.technologies}
               websiteUrl={project.websiteUrl}
-              githubUrl={project.githubUrl}
             />
           ))}
         </div>
