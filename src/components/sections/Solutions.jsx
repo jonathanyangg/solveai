@@ -1,6 +1,14 @@
+'use client'
 import SolutionCard from '../cards/SolutionCard'
 
 export default function Solutions() {
+  const scrollToSection = (sectionName) => {
+    const section = document.querySelector(`[data-section="${sectionName}"]`)
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
   return (
     <section className='h-auto bg-[#0f0f0f] p-20' data-section='solutions'>
       <p className='mb-4 text-center text-4xl font-medium text-[#ededed]'>
@@ -93,12 +101,13 @@ export default function Solutions() {
         <p className='mb-6 text-2xl font-medium text-[#ededed]'>
           Ready to transform your business?
         </p>
-        <a
-          href='#contact'
+        <button
+          type='button'
+          onClick={() => scrollToSection('contact')}
           className='inline-block rounded-lg bg-[#4a4a4a] px-8 py-3 text-[#ededed] transition-all duration-300 hover:scale-105 hover:bg-[#6e6e6e]'
         >
           Get Started
-        </a>
+        </button>
       </div>
     </section>
   )
