@@ -14,7 +14,7 @@ export default function Home() {
       </header>
       
       <Hero />
-      <DemoVideo />
+      {/* <DemoVideo /> */}
       <Solutions />
       <Projects />
       <Contact />
