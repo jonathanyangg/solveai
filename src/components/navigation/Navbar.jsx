@@ -34,10 +34,10 @@ export default function Navbar() {
     <nav
       id='navbar'
       className={`top-0; fixed z-10 w-full transition-all duration-300 ${
-        scrolled ? 'shadow-lg' : ''
+        scrolled ? 'backdrop-blur-md shadow-lg' : ''
       }`}
       style={{
-        background: scrolled ? 'radial-gradient(at 57% 4%, #121212 0px, transparent 50%), #050505' : 'transparent'
+        background: scrolled ? 'rgba(8, 8, 8, 0.8)' : 'transparent'
       }}
     >
       <ul className='my-4 flex flex-row items-center justify-center gap-x-2 md:gap-x-6'>

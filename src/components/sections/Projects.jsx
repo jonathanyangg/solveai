@@ -29,25 +29,27 @@ export default function Projects() {
   ]
 
   return (
-    <section className='h-auto p-4 md:p-20' data-section='projects'>
-      <p className='mb-4 text-center text-4xl font-medium text-[#ededed]'>
-        Past Projects
-      </p>
-      <p className='mb-16 text-center text-lg text-[#d6d4d4]'>
-        Here are some of the cool things we've worked on
-      </p>
+    <section className='h-auto p-8 md:p-20' data-section='projects'>
+      <div className="max-w-7xl mx-auto">
+        <p className='mb-4 text-center text-4xl font-medium text-[#ededed]'>
+          Past Projects
+        </p>
+        <p className='mb-16 text-center text-lg text-[#d6d4d4]'>
+          Here are some of the cool things we've worked on
+        </p>
 
-      <div className='flex flex-row items-center justify-center'>
-        <div className='grid w-full grid-cols-1 gap-8 px-4 md:grid-cols-2 md:gap-16 md:px-16'>
-          {projects.map((project, index) => (
-            <ProjectCard
-              key={index}
-              title={project.title}
-              description={project.description}
-              technologies={project.technologies}
-              websiteUrl={project.websiteUrl}
-            />
-          ))}
+        <div className="backdrop-blur-sm bg-black/20 border border-[#2a2a2a] rounded-xl p-8 md:p-12 shadow-2xl">
+          <div className='grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12'>
+            {projects.map((project, index) => (
+              <ProjectCard
+                key={index}
+                title={project.title}
+                description={project.description}
+                technologies={project.technologies}
+                websiteUrl={project.websiteUrl}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>
