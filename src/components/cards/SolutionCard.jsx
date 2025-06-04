@@ -13,7 +13,7 @@ export default function SolutionCard({ title, Icon, question, features }) {
           <li key={index} className='flex items-start gap-3'>
             <div className="flex-shrink-0 mt-0.5">
               <svg
-                className='h-5 w-5 text-[#ededed]'
+                className='h-5 w-5 text-green-500'
                 fill='none'
                 stroke='currentColor'
                 viewBox='0 0 24 24'

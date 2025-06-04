@@ -38,18 +38,16 @@ export default function Projects() {
           Here are some of the cool things we've worked on
         </p>
 
-        <div className="backdrop-blur-sm bg-black/20 border border-[#2a2a2a] rounded-xl p-8 md:p-12 shadow-2xl">
-          <div className='grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12'>
-            {projects.map((project, index) => (
-              <ProjectCard
-                key={index}
-                title={project.title}
-                description={project.description}
-                technologies={project.technologies}
-                websiteUrl={project.websiteUrl}
-              />
-            ))}
-          </div>
+        <div className='grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12'>
+          {projects.map((project, index) => (
+            <ProjectCard
+              key={index}
+              title={project.title}
+              description={project.description}
+              technologies={project.technologies}
+              websiteUrl={project.websiteUrl}
+            />
+          ))}
         </div>
       </div>
     </section>
