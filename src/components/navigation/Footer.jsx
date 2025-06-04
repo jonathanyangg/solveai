@@ -11,7 +11,11 @@ export default function Footer() {
   ]
 
   return (
-    <footer className='bg-[#242424]'>
+    <footer 
+      style={{
+        background: 'radial-gradient(at 57% 4%, #121212 0px, transparent 50%), #050505'
+      }}
+    >
       <div className='mx-auto flex w-full max-w-screen-xl flex-row flex-wrap-reverse content-evenly items-center justify-around gap-y-4 p-5'>
         <span className='text-center text-sm text-[#ededed]'>
           © solve-AI - {currentYear}. All Rights Reserved

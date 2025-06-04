@@ -34,8 +34,11 @@ export default function Navbar() {
     <nav
       id='navbar'
       className={`top-0; fixed z-10 w-full transition-all duration-300 ${
-        scrolled ? 'bg-[#0a0a0a] shadow-lg' : 'bg-transparent'
+        scrolled ? 'shadow-lg' : ''
       }`}
+      style={{
+        background: scrolled ? 'radial-gradient(at 57% 4%, #121212 0px, transparent 50%), #050505' : 'transparent'
+      }}
     >
       <ul className='my-4 flex flex-row items-center justify-center gap-x-2 md:gap-x-6'>
         <li>

@@ -8,14 +8,14 @@ function ContactForm() {
     
     if (state.succeeded) {
         return (
-            <div className="flex justify-center p-8 bg-[#151515]">
+            <div className="flex justify-center p-8">
             <p className="text-xl text-[#ededed]">Thanks for your message! We will get back to you soon</p>
             </div>
         )
     }
     
     return (
-        <section data-section="contact" className="bg-[#151515] p-8 md:p-20">
+        <section data-section="contact" className="p-8 md:p-20">
             <div className="px-4 mx-auto max-w-screen-md">
                 <p className="text-4xl font-medium text-[#ededed] text-center mb-4">
                     Contact Us

@@ -29,7 +29,7 @@ export default function Projects() {
   ]
 
   return (
-    <section className='h-auto bg-[#121212] p-4 md:p-20' data-section='projects'>
+    <section className='h-auto p-4 md:p-20' data-section='projects'>
       <p className='mb-4 text-center text-4xl font-medium text-[#ededed]'>
         Past Projects
       </p>

@@ -15,9 +15,16 @@ export default function Home() {
       
       <Hero />
       {/* <DemoVideo /> */}
-      <Solutions />
-      <Projects />
-      <Contact />
+      
+      <div 
+        style={{
+          background: 'radial-gradient(at 99% 99%, #1c1c1c 0px, transparent 50%), radial-gradient(at 3% 1%, #1c1c1c 0px, transparent 50%), #000000'
+        }}
+      >
+        <Solutions />
+        <Projects />
+        <Contact />
+      </div>
       
       <Footer />
     </main>
