@@ -17,16 +17,16 @@ function ContactForm() {
     }
     
     return (
-        <section data-section="contact" className="p-8 md:p-20">
+        <section data-section="contact" className="py-16 px-8 md:py-24 md:px-20">
             <div className="px-4 mx-auto max-w-screen-md">
-                <p className="text-4xl font-medium text-[#ededed] text-center mb-4">
+                <p className="text-4xl font-medium text-[#ededed] text-center mb-6">
                     Contact Us
                 </p>
-                <p className="text-center text-[#d6d4d4] text-lg mb-12">
+                <p className="text-center text-[#d6d4d4] text-lg mb-16 leading-relaxed">
                     Want to get started? Need details about our services? Let us know below!
                 </p>
                 
-                <form onSubmit={handleSubmit} className="flex flex-col gap-6">
+                <form onSubmit={handleSubmit} className="flex flex-col gap-8">
                     <div className="group">
                         <label 
                             htmlFor="email" 
@@ -93,7 +93,7 @@ function ContactForm() {
                         <button 
                             type="submit"
                             disabled={state.submitting}
-                            className="relative overflow-hidden py-4 px-8 text-base font-medium text-[#ededed] rounded-lg 
+                            className="relative overflow-hidden py-3 px-7 text-base font-medium text-[#ededed] rounded-lg 
                                      bg-[#2a2a2a] hover:bg-[#3a3a3a] border border-[#404040] hover:border-[#505050]
                                      disabled:bg-[#1a1a1a] disabled:border-[#2a2a2a] disabled:cursor-not-allowed disabled:text-[#888]
                                      transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-white/10

@@ -29,16 +29,16 @@ export default function Projects() {
   ]
 
   return (
-    <section className='h-auto p-8 md:p-20' data-section='projects'>
+    <section className='h-auto py-12 px-8 md:py-16 md:px-20' data-section='projects'>
       <div className="max-w-7xl mx-auto">
-        <p className='mb-4 text-center text-4xl font-medium text-[#ededed]'>
+        <p className='mb-6 text-center text-4xl font-medium text-[#ededed]'>
           Past Projects
         </p>
-        <p className='mb-16 text-center text-lg text-[#d6d4d4]'>
+        <p className='mb-20 text-center text-lg text-[#d6d4d4] leading-relaxed'>
           Here are some of the cool things we've worked on
         </p>
 
-        <div className='grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12'>
+        <div className='grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-12'>
           {projects.map((project, index) => (
             <ProjectCard
               key={index}

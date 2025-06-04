@@ -10,17 +10,17 @@ export default function Solutions() {
   }
 
   return (
-    <section className='h-auto p-8 md:p-20' data-section='solutions'>
+    <section className='h-auto py-16 px-8 md:py-24 md:px-20' data-section='solutions'>
       <div className="max-w-7xl mx-auto">
-        <p className='mb-4 text-center text-4xl font-medium text-[#ededed]'>
+        <p className='mb-6 text-center text-4xl font-medium text-[#ededed]'>
           Solutions
         </p>
-        <p className='mx-auto mb-16 max-w-3xl text-center text-lg text-[#d6d4d4]'>
+        <p className='mx-auto mb-20 max-w-3xl text-center text-lg text-[#d6d4d4] leading-relaxed'>
           We leverage cutting-edge AI technology to transform your business
           challenges into opportunities for growth and efficiency
         </p>
 
-        <div className='grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-16'>
+        <div className='grid gap-10 md:grid-cols-2 lg:grid-cols-3 mb-20'>
           <SolutionCard
             title='AI Strategy Consulting'
             Icon={({ className }) => (
@@ -98,13 +98,13 @@ export default function Solutions() {
         </div>
 
         <div className='text-center'>
-          <p className='mb-6 text-2xl font-medium text-[#ededed]'>
+          <p className='mb-8 text-2xl font-medium text-[#ededed]'>
             Ready to transform your business?
           </p>
           <button
             type='button'
             onClick={() => scrollToSection('contact')}
-            className='inline-block rounded-lg bg-[#2a2a2a] hover:bg-[#3a3a3a] border border-[#404040] hover:border-[#505050] px-8 py-3 text-[#ededed] transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-white/10'
+            className='inline-block rounded-lg bg-[#2a2a2a] hover:bg-[#3a3a3a] border border-[#404040] hover:border-[#505050] px-7 py-3 text-[#ededed] transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-white/10'
           >
             Get Started
           </button>
