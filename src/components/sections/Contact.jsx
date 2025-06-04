@@ -10,7 +10,7 @@ function ContactForm() {
         return (
             <div className="flex justify-center p-8">
                 <div className="backdrop-blur-sm bg-green-500/10 border border-green-500/20 rounded-lg p-6 shadow-lg">
-                    <p className="text-xl text-[#ededed] text-center">✨ Thanks for your message! We will get back to you soon</p>
+                    <p className="text-xl text-[#ededed] text-center">Thanks for your message! We will get back to you soon</p>
                 </div>
             </div>
         )
