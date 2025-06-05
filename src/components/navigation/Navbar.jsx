@@ -33,7 +33,7 @@ export default function Navbar() {
   return (
     <nav
       id='navbar'
-      className={`top-0; fixed z-10 w-full transition-all duration-300 ${
+      className={`top-0; fixed z-[9999] w-full transition-all duration-300 ${
         scrolled ? 'backdrop-blur-md shadow-lg' : ''
       }`}
       style={{
