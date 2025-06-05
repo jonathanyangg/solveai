@@ -26,27 +26,47 @@ export default function Hero() {
   }, [])
 
   return (
-    <section
-      data-section='home'
-      className='relative flex h-screen w-full items-center justify-center text-[#ededed]'
-    >
-      <Image
-        src="/homepage.jpg"
-        alt="Hero background"
-        fill
-        priority
-        className="object-cover brightness-50"
-        style={{ zIndex: -1 }}
+    <>
+      {/* Schema.org structured data for SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Solve AI",
+            "description": "AI services for business problems - Solve, Scale, and Simplify with artificial intelligence",
+            "url": typeof window !== 'undefined' ? window.location.origin : '',
+            "serviceType": "AI Services"
+          })
+        }}
       />
-      <div className='relative z-10 flex flex-col items-center'>
-        <p className='mb-6 mt-6 text-5xl font-medium'>
-          <span ref={typedRef} className='font-semibold' suppressHydrationWarning></span>with AI
-        </p>
+      
+      <section
+        data-section='home'
+        className='relative flex h-screen w-full items-center justify-center text-[#ededed]'
+        role='banner'
+        aria-label='Hero section'
+      >
+        <Image
+          src="/homepage.jpg"
+          alt="Modern AI technology background representing artificial intelligence solutions for business"
+          fill
+          priority
+          className="object-cover brightness-50"
+          style={{ zIndex: -1 }}
+        />
+        <div className='relative z-10 flex flex-col items-center'>
+          <h1 className='mb-6 mt-6 text-5xl font-medium'>
+            <span ref={typedRef} className='font-semibold' suppressHydrationWarning aria-live='polite'></span>
+            <span className='sr-only'>Solve, Scale, or Simplify </span>with AI
+          </h1>
 
-        <p className='mb-6 text-center text-xl font-light'>
-          Explore AI services for your business problems
-        </p>
-      </div>
-    </section>
+          <h2 className='mb-6 text-center text-xl font-light'>
+            Explore AI services for your business problems
+          </h2>
+        </div>
+      </section>
+    </>
   )
 }

@@ -8,8 +8,8 @@ const manrope = Manrope({
 });
 
 export const metadata = {
-  title: "solve-AI",
-  description: "AI solutions for your business problems",
+  title: "Solve-AI",
+  description: "AI solutions for your educational institution or business",
   icons: {
     icon: '/favicon.ico',
   }
