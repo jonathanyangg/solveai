@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
+import Image from 'next/image'
 import Typed from 'typed.js'
 
 export default function Hero() {
@@ -29,16 +30,17 @@ export default function Hero() {
       data-section='home'
       className='relative flex h-screen w-full items-center justify-center text-[#ededed]'
     >
-      <div
-        className='absolute inset-0 bg-cover bg-center bg-no-repeat brightness-50 md:bg-fixed'
-        style={{
-          backgroundImage: "url('/homepage.jpg')",
-          backgroundPosition: 'center center'
-        }}
-      ></div>
-      <div className='relative z-0 flex flex-col items-center'>
+      <Image
+        src="/homepage.jpg"
+        alt="Hero background"
+        fill
+        priority
+        className="object-cover brightness-50"
+        style={{ zIndex: -1 }}
+      />
+      <div className='relative z-10 flex flex-col items-center'>
         <p className='mb-6 mt-6 text-5xl font-medium'>
-          <span ref={typedRef} className='font-semibold'></span>with AI
+          <span ref={typedRef} className='font-semibold' suppressHydrationWarning></span>with AI
         </p>
 
         <p className='mb-6 text-center text-xl font-light'>

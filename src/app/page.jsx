@@ -12,7 +12,7 @@ export default function Home() {
       <header>
         <Navbar />
       </header>
-      
+
       <Hero />
       {/* <DemoVideo /> */}
       
