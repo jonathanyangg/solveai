@@ -36,7 +36,6 @@ export default function Hero() {
             "@type": "Organization",
             "name": "Solve AI",
             "description": "AI services for business problems - Solve, Scale, and Simplify with artificial intelligence",
-            "url": typeof window !== 'undefined' ? window.location.origin : '',
             "serviceType": "AI Services"
           })
         }}
