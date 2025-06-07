@@ -10,7 +10,7 @@ const manrope = Manrope({
 
 export const metadata = {
   title: "Solve-AI",
-  description: "AI solutions for your educational institution or business",
+  description: "Transform your business with AI strategy consulting, process automation, and predictive analytics. We help businesses solve challenges, scale operations, and simplify workflows using cutting-edge artificial intelligence technology.",
   icons: {
     icon: '/favicon.ico',
   }
