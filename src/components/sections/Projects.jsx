@@ -5,8 +5,7 @@ export default function Projects() {
     {
       title: 'Tour Guide Matching System',
       description:
-      'An AI-powered system that intelligently matches prospective students with current student guides based on shared interests and backgrounds. Using OpenAI\'s embedding technology and Weaviate vector database, the system processes student profiles stored in Supabase and generates personalized matches, completing what used to be days of manual work in just minutes.',
-      technologies: ['FastAPI', 'Next.js', 'Weaviate', 'Supabase'],
+      'An AI-powered system that intelligently matches prospective students with current student guides based on shared interests and backgrounds. Using OpenAI\'s embedding technology, Weaviate vector database, and Supabase\'s user authentication, admins can processes student profiles and generates personalized matches in seconds.',
     },
     {
       title: 'AI Powered Course Catalog',
