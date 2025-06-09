@@ -36,7 +36,7 @@ export default function ProjectCard({
         {description}
       </p>
       <div className='flex flex-wrap gap-3'>
-        {technologies.map((tech, index) => (
+        {technologies?.map((tech, index) => (
           <span
             key={index}
             className='rounded-full bg-[#3a3a3a]/60 backdrop-blur-sm border border-[#4a4a4a] px-4 py-2 text-xs font-medium text-[#ededed] hover:bg-[#3a3a3a] transition-colors duration-200'
