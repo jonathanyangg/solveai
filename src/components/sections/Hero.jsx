@@ -52,7 +52,7 @@ export default function Hero() {
           alt="Modern AI technology background representing artificial intelligence solutions for business"
           fill
           priority
-          className="object-cover brightness-50"
+          className="object-cover brightness-[0.4]"
           style={{ zIndex: -1 }}
         />
         <div className='relative z-10 flex flex-col items-center'>
@@ -62,7 +62,7 @@ export default function Hero() {
           </h1>
 
           <h2 className='mb-6 text-center text-xl font-light'>
-            Explore AI services for your business problems
+            Explore AI Services for your Educational Institution
           </h2>
         </div>
       </section>

@@ -4,7 +4,7 @@ import Hero from '@/components/sections/Hero';
 import Solutions from '@/components/sections/Solutions';
 import Projects from '@/components/sections/Projects';
 import Contact from '@/components/sections/Contact';
-import DemoVideo from '@/components/sections/DemoVideo';
+
 
 export default function Home() {
   return (
@@ -14,7 +14,6 @@ export default function Home() {
       </header>
 
       <Hero />
-      {/* <DemoVideo /> */}
       
       <div 
         style={{
