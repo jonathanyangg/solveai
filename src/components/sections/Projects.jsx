@@ -15,9 +15,9 @@ export default function Projects() {
       technologies: ['Django', 'PostgreSQL', 'PGVector', 'Azure'],
     },
     {
-      title: 'Math Class Placement Model',
+      title: 'Class Placement Model',
       description:
-        'An automated system that streamlines the math class placement process using machine learning. By analyzing placement test scores, SSAT results, and prior grades, the model provides accurate class recommendations, reducing hours of manual work to mere minutes.',
+        'An automated system that streamlines the class placement process using machine learning. By analyzing placement test scores, SSAT results, and prior grades, the model provides accurate class recommendations, reducing hours of manual work to mere minutes.',
       technologies: ['Optuna', 'Scikit-learn', 'Pandas', 'NumPy']
     },
     {

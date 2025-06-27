@@ -35,7 +35,7 @@ export default function Hero() {
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "Solve AI",
-            "description": "AI services for business problems - Solve, Scale, and Simplify with artificial intelligence",
+            "description": "AI services for educational institutions - Solve, Scale, and Simplify with artificial intelligence",
             "serviceType": "AI Services"
           })
         }}
@@ -49,7 +49,7 @@ export default function Hero() {
       >
         <Image
           src="/homepage.jpg"
-          alt="Modern AI technology background representing artificial intelligence solutions for business"
+          alt="Modern AI technology background representing artificial intelligence solutions for educational institutions and businesses"
           fill
           priority
           className="object-cover brightness-[0.4]"
@@ -62,7 +62,7 @@ export default function Hero() {
           </h1>
 
           <h2 className='mb-6 text-center text-xl font-light'>
-            Explore AI Services for your Educational Institution
+            Explore AI Services for Educational Institutions
           </h2>
         </div>
       </section>
