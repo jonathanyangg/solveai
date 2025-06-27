@@ -16,7 +16,7 @@ export default function Solutions() {
           Solutions
         </p>
         <p className='mx-auto mb-20 max-w-3xl text-center text-lg text-[#d6d4d4] leading-relaxed'>
-          We leverage cutting-edge AI technology to transform your business
+          We leverage cutting-edge AI technology to transform your educational institution's
           challenges into opportunities for growth and efficiency
         </p>
 
@@ -39,7 +39,7 @@ export default function Solutions() {
                 />
               </svg>
             )}
-            question='Are you struggling to identify where AI can benefit your business?'
+            question='Are you struggling to identify where AI can benefit your school?'
             features={[
               'Custom AI roadmap development',
               'ROI analysis and implementation planning'
@@ -92,14 +92,14 @@ export default function Solutions() {
             question='Want to make data-driven decisions with confidence?'
             features={[
               'Custom prediction models',
-              'Business intelligence dashboards'
+              'Intelligence dashboards'
             ]}
           />
         </div>
 
         <div className='text-center'>
           <p className='mb-8 text-2xl font-medium text-[#ededed]'>
-            Ready to transform your business?
+            Ready to transform your school?
           </p>
           <button
             type='button'
