@@ -99,7 +99,7 @@ export default function Solutions() {
 
         <div className='text-center'>
           <p className='mb-8 text-2xl font-medium text-[#ededed]'>
-            Ready to transform your school?
+            Let's discuss your needs
           </p>
           <button
             type='button'
